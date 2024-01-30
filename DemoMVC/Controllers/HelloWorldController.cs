@@ -1,10 +1,12 @@
-namespace DemoMVC.Controllers;
-
-public class HelloWorldController : Controllers
+using Microsoft.AspNetCore.Mvc;
+using System.Text.Encodings.Web;
+namespace DemoMVC.Controllers
 {
-    public IActionResult Index()
+    public class HelloWorldController : Controller
     {
-        return View();
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
 }
-
