@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using DemoMVC.Models;
 using Microsoft.EntityFrameworkCore;
 
-
 namespace DemoMVC.Data
 {
     public class ApplicationDbContext : DbContext
