@@ -12,8 +12,8 @@ public class EmployeeController : Controller
     [HttpPost]
     public IActionResult Index (Employee ep)
     {
-        string strResult = "Xin chao " + ep.EmployeeId + "-" + ep.Age;
-        ViewBag.Info = strResult;
+        string strResult = "Xin chao " + ep.EmployeeID + "-" + ep.Age;
+        ViewBag.Employee = strResult;
         return View();
     }
 }

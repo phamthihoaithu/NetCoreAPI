@@ -13,7 +13,7 @@ public class PersonController : Controller
     public IActionResult Index (Person ps)
     {
         string strResult = "Xin chao " + ps.PersonID + "-" + ps.FullName + "-" + ps.Address;
-        ViewBag.Info = strResult;
+        ViewBag.Person = strResult;
         return View();
     }
 }
