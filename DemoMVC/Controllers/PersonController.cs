@@ -9,12 +9,15 @@ using DemoMVC.Data;
 using DemoMVC.Models;
 using System.IO;
 using DemoMVC.Models.Process;
+using OfficeOpenXml;
 
 namespace DemoMVC.Controllers
 {
     public class PersonController : Controller
     {
         private readonly ApplicationDbContext _context;
+
+        private ExcelProcess _excelProcess = new ExcelProcess();
 
         public PersonController(ApplicationDbContext context)
         {
@@ -173,18 +176,48 @@ namespace DemoMVC.Controllers
                 }
                 else
                 {
+                    var ListPerson =_context.Person.ToList();
+                    _context.Person.RemoveRange(ListPerson);
+                    await _context.SaveChangesAsync();
                     //rename file when upload to server
                     var fileName = DateTime.Now.ToShortTimeString() + fileExtension;
                     var filePath = Path.Combine(Directory.GetCurrentDirectory() + "/Uploads/Excels", fileName);
                     var fileLocation = new FileInfo(filePath).ToString();
-                    using (var stream = new FileStream(filePath, FileMode.Create));
+                    using (var stream = new FileStream(filePath, FileMode.Create))
                     {
                         //save file to server
                         await file.CopyToAsync(stream);
+                        var dt = _excelProcess.ExcelToDataTable(fileLocation);
+                        for (int i = 0; i < dt.Rows.Count; i++)
+                        {
+                            var ps = new Person();
+                            ps.PersonID = dt.Rows[i][0].ToString();
+                            ps.FullName = dt.Rows[i][0].ToString();
+                            ps.Address = dt.Rows[i][2].ToString(); 
+                            _context.Add(ps);
+                        }
+                        await _context.SaveChangesAsync();
+                        return RedirectToAction(nameof(Index));
                     }
                 }
             }
             return View();
+        }
+
+        public IActionResult Dowload()
+        {
+            var fileName = "PTPMQL1" + ".xlsx";
+            using (ExcelPackage excelPackage = new ExcelPackage())
+            {
+                ExcelWorksheet worksheet = excelPackage.Workbook.Worksheets.Add("Sheet 1");
+                worksheet.Cells["A1"].Value = "PersonID";
+                worksheet.Cells["B1"].Value = "FullName";
+                worksheet.Cells["C1"].Value = "Address";
+                var personList = _context.Person.ToList();
+                worksheet.Cells["A2"].LoadFromCollection(personList);
+                var stream = new MemoryStream(excelPackage.GetAsByteArray());
+                return File(stream, "applicaion/vnd-ms-excel", fileName);
+            }
         }
     }
 }
