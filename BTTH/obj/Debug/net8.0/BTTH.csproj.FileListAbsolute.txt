@@ -257,3 +257,6 @@ D:\PTHT-PTPMQL\BTTH\bin\Debug\net8.0\EPPlus.dll
 D:\PTHT-PTPMQL\BTTH\bin\Debug\net8.0\EPPlus.Interfaces.dll
 D:\PTHT-PTPMQL\BTTH\bin\Debug\net8.0\EPPlus.System.Drawing.dll
 D:\PTHT-PTPMQL\BTTH\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
+D:\PTHT-PTPMQL\BTTH\bin\Debug\net8.0\X.PagedList.dll
+D:\PTHT-PTPMQL\BTTH\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
+D:\PTHT-PTPMQL\BTTH\obj\Debug\net8.0\BTTH.MvcApplicationPartsAssemblyInfo.cs

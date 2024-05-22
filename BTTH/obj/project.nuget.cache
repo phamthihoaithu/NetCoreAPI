@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "aXK00SwVv0uGPy1sueDClcbDh+Q2uccJcMTPr5CLY2E/+jQCDs/lkfcPF+3qKTci0oYgfPbWgP0VSmfc31I1JA==",
+  "dgSpecHash": "KZQ+fmlD/fLx2SPFY0z/mOid9vQZF1zsJPQnygIfoJu1QWdAK1idby/qADWnUJBclPhyvGq2e8+evKsoIbcPsQ==",
   "success": true,
   "projectFilePath": "D:\\PTHT-PTPMQL\\BTTH\\BTTH.csproj",
   "expectedPackageFiles": [
@@ -152,7 +152,9 @@
     "C:\\Users\\Windows HT\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\Windows HT\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\Windows HT\\.nuget\\packages\\system.threading.tasks.dataflow\\7.0.0\\system.threading.tasks.dataflow.7.0.0.nupkg.sha512",
-    "C:\\Users\\Windows HT\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
+    "C:\\Users\\Windows HT\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Windows HT\\.nuget\\packages\\x.pagedlist\\9.1.2\\x.pagedlist.9.1.2.nupkg.sha512",
+    "C:\\Users\\Windows HT\\.nuget\\packages\\x.pagedlist.mvc.core\\9.1.2\\x.pagedlist.mvc.core.9.1.2.nupkg.sha512"
   ],
   "logs": []
 }
