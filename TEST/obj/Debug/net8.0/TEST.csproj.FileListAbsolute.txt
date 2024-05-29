@@ -253,3 +253,10 @@ D:\PTHT-PTPMQL\TEST\bin\Debug\net8.0\runtimes\win-arm\native\e_sqlite3.dll
 D:\PTHT-PTPMQL\TEST\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 D:\PTHT-PTPMQL\TEST\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 D:\PTHT-PTPMQL\TEST\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\PTHT-PTPMQL\TEST\bin\Debug\net8.0\EPPlus.dll
+D:\PTHT-PTPMQL\TEST\bin\Debug\net8.0\EPPlus.Interfaces.dll
+D:\PTHT-PTPMQL\TEST\bin\Debug\net8.0\EPPlus.System.Drawing.dll
+D:\PTHT-PTPMQL\TEST\bin\Debug\net8.0\Microsoft.IO.RecyclableMemoryStream.dll
+D:\PTHT-PTPMQL\TEST\bin\Debug\net8.0\X.PagedList.dll
+D:\PTHT-PTPMQL\TEST\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
+D:\PTHT-PTPMQL\TEST\obj\Debug\net8.0\TEST.MvcApplicationPartsAssemblyInfo.cs

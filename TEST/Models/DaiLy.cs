@@ -9,5 +9,5 @@ public class DaiLy
     public string NguoiDaiDien {get; set; }
     public string DienThoai { get; set; }
     [ForeignKey("MaHTPP")]
-    public string MaHTPP { get; set; }
+    public string? MaHTPP { get; set; }
 }

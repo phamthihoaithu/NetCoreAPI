@@ -201,9 +201,7 @@ namespace BTTH.Controllers
                 }
                 else
                 {
-                    var ListPerson =_context.Person.ToList();
-                    _context.Person.RemoveRange(ListPerson);
-                    await _context.SaveChangesAsync();
+                    
                     //rename file when upload to server
                     var fileName = DateTime.Now.ToShortTimeString() + fileExtension;
                     var filePath = Path.Combine(Directory.GetCurrentDirectory() + "/Uploads/Excels", fileName);
